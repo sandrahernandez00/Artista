@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bertolt Brecht</title>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+        <style type="text/css">
+            :root{
+                --c:red;
+            }
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+            body{
+                font-size: 19px;
+            }
+            img{
+                width: 100%;
+                height: flex;
+            }
+            header{
+                width: 100%;
+                display: 70vh;
+                background: orange;
+                display: flex;       
+            }
+            header div {
+                position: relative;
+                width: 50%;
+                height: 70vh;
+            }
+            hearder div img {
+                object-fit: cover;
+                object-position: top center;
+                width: 100%;
+                height: 100%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            div{
+                width: 300px;
+                height: 300px;
+            }
+            .bloc_esq{
+                background: purple;
+            }
+            .bloc_esq img{
+                object-fit: cover;
+                object-position: top center;
+            }
+            .bloc_dre{
+                background: pink;
+            }
+            .bloc_dre img{
+                object-fit: cover;
+                object-position: top center;
+            }
+            h1{
+                font-family: 'Merriweather', serif;
+                position: absolute;
+                text-align: center;
+                top: 40vh;
+                font-size: 2vw;
+                width: 100%;  
+            }
+            h2{
+                font-family: 'Merriweather', serif;
+                margin: auto;
+                text-align: center;
+                padding: 40px 0;
+                top: 50vh;
+                width: 100%;
+                font-size: 1vw;
+            }
+            article{
+                font-family: 'Jomolhari', serif;
+                font-size: 1vw;
+                width: 35.4em;
+                margin: auto;
+            }
+            article>p{
+                text-align: center;
+                hyphens: auto;
+                line-height: 1.4em;
+                column-gap: 30px;
+                color: var(--c);
+                padding: 8vw 0;
+                column-gap: 30px;
+                color: black;
+            }
+            article>p:first-child{
+                text-align: justify;
+                hyphens: auto;
+                line-height: 1.4em;
+                column-count: 2;
+                column-gap: 30px;
+                color: var(--c);
+                padding: 8vw 0;
+                column-gap: 30px;
+                column-rule: 1px solid var(--c);
+            }
+            article>p:first-child::first-letter{
+                font-family: 'Jomolhari', serif;
+                color: var(--c);
+                font-size: 5em; 
+                float: left;
+                margin-right:  0.2em;
+                margin-top: 0.2em;
+                padding-bottom: 0.2em;
+            }
+            article>#cos>p{
+                width: auto;
+                padding: 0 3em;
+                text-align: center;
+                hyphens: auto;
+                line-height: 1.4em;
+            }
+            article #cos p {
+                padding: 0 0 1.5em 0;
+            }
+            .nonagon,
+            .hexagon{
+                background: pink;
+            }
+            .nonagon img
+            .hexagon img{
+                mix-blend-mode: hard-light;
+            }
+            .nonagon,
+            .nonagon img{
+                border-radius: 50%;
+                clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            }
+            .nonagon {
+                max-width: 20em;
+                float: left;
+                margin-left: -8em;
+                shape-margin: 1.5em;
+                shape-outside: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+            }
+            .hexagon,
+            .hexagon img {
+                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+            }
+            .hexagon {
+                max-width: 20em;
+                float: right;
+                margin-right: -8em;
+                shape-margin: 2em;
+                shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% )
+            }
+            @media (max-width:600px) {
+                body{
+                    background: black;
+                    font-size: 19 px;
+                    color: var(--c);
+                }
+                h1,h2{
+                    color: black;
+                }
+                article>p:first-child{
+                    color: var(--c);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="bloc_esq">
+                <img src="img/bertoltbrecht.jpg">
+            </div>
+            <div class="bloc_dre">
+                <img src="img/bertolt%20brechtnimabona.jpg">
+            </div>
+            <h1>Bertolt Brecht. <br> Escritor alemán.</h1>
+        </header>
+        <article>
+            <p>Eugen Berthold Friedrich Brecht (Augsburg, 1898 - Berlín oriental, 1956) Escritor alemán. Además de ser uno de los dramaturgos más destacados e innovadores del siglo XX, cuyas obras buscan siempre la reflexión del espectador, trató también de fomentar el activismo político con las letras de sus lieder, a los que Kurt Weill puso la música.Comenzó en Múnich sus estudios de literatura y filosofía en 1917, a los que añadiría posteriormente los de medicina. Durante la Primera Guerra Mundial comenzó a escribir y publicar sus obras. Desde 1920 frecuentó el mundo artístico de Múnich y trabajó como dramaturgo y director de escena. En este entorno conoció a Frank Wedekind, Karl Valentin y Lion Feuchtwanger, con quienes mantuvo siempre un estrecho contacto.</p>
+            
+            <h class="#cos">
+            <p>En 1924 se trasladó a Berlín, donde trabajó como dramaturgo a las órdenes de Max Reinhardt en el Deutsches Theater; posteriormente colaboró también en obras de carácter colectivo junto con Elisabeth Hauptmann, Erwin Piscator, Kurt Weill, Hans Eisler y Slatan Dudow, y trabó relaciones con el pintor Georg Grosz. En 1926 comenzó a interesarse con mayor intensidad por el marxismo y estableció un estrecho contacto con Karl Korsch y Walter Benjamin. Su Dreigroschenoper (Opera de cuatro cuartos, 1928) obtuvo en 1928 el mayor éxito conocido en la República de Weimar. En ese año 1928 se casó con la actriz Helene Weigel.</p>
+            <div class="hexagon">
+                <img src="img/bertolt%20brechtwarprimer.jpg" alt="">
+            </div>
+            
+            <p>Desde 1930 estrechó sus contactos con el Partido Comunista Alemán. Tres años más tarde, la ascensión del nazismo forzó su salida del país: el 28 de febrero de 1933, un día después de la quema del Parlamento, Brecht comenzó su camino hacia el exilio en Svendborg (Dinamarca). Tras una breve temporada en Austria, Suiza y Francia, marchó a Dinamarca, donde se estableció con su mujer y dos colaboradoras, Margarethe Steffin y Ruth Berlau. En 1935 viajó a Moscú, Nueva York y París, donde intervino en el Congreso de Escritores Antifascistas, suscitando una fuerte polémica.</p>
+            <div class="nonagon">
+                <img src="img/bertolt%20brechtpoemasycanciones.jpg" alt="">
+            </div>
+            
+            <p>Iniciada la Segunda Guerra Mundial, y temiendo la ocupación alemana, en 1939 se marchó a Suecia; en 1940, a Finlandia, país del que tuvo que escapar ante la llegada de los nazis; y en 1941, a través de la Unión Soviética (vía Vladivostok), a Santa Monica, en los Estados Unidos, donde permaneció aislado seis años, viviendo de guiones para Hollywood. En 1947 se llevó a la pantalla Galileo Galilei, con muy poco éxito. A raíz del estreno de esta película, el Comité de Actividades Antinorteamericanas le consideró elemento sospechoso y tuvo que marchar a Berlín Este (1948), donde organizó primero el Deutsches Theater y, posteriormente, el Theater am Schiffbauerdamm. Antes había pasado por Suiza, donde colaboró con Max Frisch y Günther Weisenborn.</p>
+
+            </h>
+        </article>
+    </body>
+</html>
